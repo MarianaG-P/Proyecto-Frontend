@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400&family=Roboto+Flex:wght@500&display=swap');
 
 :root{
-    --main-color:#ff702a;
+    --main-color:#ACD44C;
     --text-color:#fff;
     --bg-color:#1e1c2a;
     --big-font:5rem;
@@ -45,8 +45,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 170px;
+    padding: 30px 103px;
+    transition: background-color 0.5s ease-in-out;
     /*background-color: var(--bg-color);*/
+}
+header.scrolled {
+    height: 10%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    padding-bottom: 0;
 }
 .logo{
     color:var(--text-color);
@@ -73,7 +80,7 @@ header{
 }
 
 section{
-    padding: 70px 7%;
+    padding: 85px 7%;
 }
 .home{
     width: 100%;
@@ -83,22 +90,30 @@ section{
     grid-gap: 3.5rem;
     align-items: center;
 }
+.home-two {
+    padding-top: 15px;
+}
 .home-img img{
     max-width: 100%;
     width: 100% ;
     height: auto;
 }
 
-.home-two .button{
-    text-align: center;
-}
 .home-text h1{
-    font-size: var(--big-font);
+    /*font-size: var(--big-font);*/
+    font-size: 320%;
     color: var(--main-color);
+    padding-top: 28px; 
 }
 .home-text p{
-    font-size: var(--h2-font);
-    margin: 1rem 0 2rem;
+    /*font-size: var(--h2-font);*/
+    font-size: 130%;
+    margin: 1rem 0 1rem;
+    line-height: 1.2;
+}
+.home-two .button{
+    text-align: center;
+    margin-bottom: 45px;
 }
 .btn{
     display: inline-block;
@@ -118,8 +133,55 @@ section{
 
 .container-f{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(87px, auto));
     grid-gap: 1.5rem;
+}
+
+.box-i {
+    display: flex;
+    position: relative;
+    /*margin-top: 4rem;*/
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background: #feeee7;*/
+    padding: 15px;
+    border-radius: 1.25rem;
+}
+.color-banana{
+    background: rgba(196, 220, 220, 0.72);
+}
+.color-apple{
+    background: rgba(255, 205, 121, 0.73);
+}
+.color-orange{
+    background: rgba(248, 223, 183, 0.73);
+}
+
+.box-img-i{
+    width: 87px;
+    height: 87px;
+}
+.box-img-i img{
+    width: 100%;
+    height: 100%;
+}
+.box-i h2{
+    font-size: 1.3rem;
+    color: var(--bg-color);
+}
+.box-i h3{
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 7px;
+}
+
+.box-i span{
+    font-size: var(--p-font);
+    color: var(--main-color);
+    font-weight: 600;
 }
 /******About us ******/
 
@@ -145,17 +207,25 @@ section{
     width: 100% ;
     height: auto;
 }
-
+.about-text {
+    padding-right: 30px;
+    
+}
 .about-text span{
     color: var(--main-color);
     font-weight: 600;
+    font-size: 150%;
     
 }
 .about-text h2{
     font-size: var(--h2-font);
+    font-size: 250%;
+    text-align: justify;
 }
-.about-text p{
+.about-text p{    
     margin: 0.8rem 0 1.8rem;
+    line-height: 1.2;
+    font-size: 110%;
 }
 
 /****** Menú ******/
@@ -166,6 +236,7 @@ section{
 
 .heading span{
     color: var(--main-color);
+    font-size: 150%;
     font-weight: 600;
 }
 
@@ -179,6 +250,7 @@ section{
     grid-gap: 1.5rem;
     /*align-items: center;*/
 }
+
 .box{
     display: flex;
     position: relative;
@@ -194,7 +266,7 @@ section{
 
 .box-img{
     width: 220px;
-    height: 220;
+    height: 220px;
 }
 .box-img img{
     width: 100%;
@@ -243,9 +315,10 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*background: #feeee7;*/
+    background: rgba(241, 215, 193,0.2);
     padding: 20px;
     border-radius: 1.25rem;
+    
 }
 .s-box h3{
     color: var(--main-color);
@@ -265,4 +338,4 @@ section{
 
 .contact h2{
     margin-bottom: 20px;
-
+}
