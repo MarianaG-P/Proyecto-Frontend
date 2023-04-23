@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    tag details
+<form action="../../form-result.php" target="_blank">
+<p>Direción de e-mail: <input type="email" name="direccionemail"></p>
+<details>
+    <summary>Opciones extra</summary>
+    <p><input type="checkbox" name="enviarofertas" checked> Enviar ofertas y promociones a mi dirección de e-mail.</p>
+</details>
+<p><input type="submit" value="Enviar datos"></p>
+</form>
+<p>La mayoría de procesos astrofísicos no pueden ser recreados en los laboratorios de la Tierra. 
+En cualquier caso, existe una gran variedad de objetos astronómicos visibles a lo largo de todo 
+el espectro electromagnético. El estudio de dichos objetos mediante la adquisición pasiva de 
+datos es el objetivo de la astronomía observacional.</p>
+<details open>
+<summary>Galileo Galilei</summary>
+<img src="/assets/images/galileo-galilei.jpg" style="float: right; margin: 0 0 1em 2em" alt="Galileo 
+Galilei, padre de la astronomía observacional moderna">
+<p>Galileo Galilei fue un astrónomo, filósofo, ingeniero, matemático y físico italiano, 
+relacionado estrechamente con la revolución científica. Eminente hombre del Renacimiento, 
+mostró interés por casi todas las ciencias y artes (música, literatura, pintura).</p>
+<p>Sus logros incluyen la mejora del telescopio, gran variedad de observaciones astronómicas, 
+la primera ley del movimiento y un apoyo determinante al copernicanismo.</p>
+</details>
+tag summary
+<p><b>Cosmos: un viaje personal</b> es una serie documental de divulgación científica escrita 
+por Carl Sagan, Ann Druyan y Steven Soter (con Sagan como guionista principal y presentador), 
+cuyos objetivos fundamentales fueron: difundir la historia de la astronomía y de la ciencia, así 
+como sobre el origen de la vida; concienciar sobre el lugar que ocupa nuestra especie y nuestro 
+planeta en el universo, y presentar las modernas visiones de la cosmología y las últimas noticias 
+de la exploración espacial, y en particular, las misiones Voyager.</p>
+<details>
+<summary>Carl Sagan</summary>
+<p>Carl Edward Sagan fue un astrónomo, astrofísico, cosmólogo, escritor y divulgador científico 
+estadounidense. Sagan publicó numerosos artículos científicos y comunicaciones1 y fue autor, 
+coautor o editor de más de una veintena de libros. Defensor del pensamiento escéptico científico 
+y del método científico, fue también pionero de la exobiología, promotor de la búsqueda de 
+inteligencia extraterrestre a través del Proyecto SETI e impulsó el envío de mensajes a bordo de 
+sondas espaciales, destinados a informar a posibles civilizaciones extraterrestres acerca de la 
+cultura humana.</p>
+</details>
+tag dialog
+<button type="button" onclick="abrirDialogo('dialogo1')">Abrir diálogo</button>
+<dialog id="dialogo1">
+<p>Hola! Este es nuestro primer diálogo. Si te gusta, no lo cierres...</p>
+<button type="button" onclick="cerrarDialogo('dialogo1')">Cerrar</button>
+</dialog>
+<button type="button" onclick="abrirDialogo('dialogo2', true)">Abrir diálogo</button>
+<dialog id="dialogo2" class="dialogo-ejemplo">
+<p>Wow! esto está mejor, ¿no es así?</p>
+<button type="button" onclick="cerrarDialogo('dialogo2')">Cerrar</button>
+</dialog>
+tag script
+<p onmouseover="cambiarAItalica(this)" onmouseout="changeANormal(this)">Kennedy se 
+tranquilizó y volvió a abismarse en su contemplación indecisa, cuando hendió los aires un agudo 
+silbido.</p>
+<script>
+function cambiarAItalica(element) {
+    element.style.fontStyle='italic';
+}
+function changeANormal(element) {
+    element.style.fontStyle='normal';
+}
+</script>
+<p onmouseover="espesorANegrita(this)" onmouseout="espesorANormal(this)">Joe se 
+deslizó por el cable y reapareció a los pocos instantes. El Victoria, en libertad, flotaba en el aire, 
+casi inmóvil.</p>
+<script src="script.js"></script>
+tag canvas
+<canvas id="canvas-1" height="100"></canvas>
+<canvas id="canvas-2" height="200"></canvas>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Punto 4 */
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+
+/* Punto 5 */
+
+.p5_green span{
+    text-decoration: underline;
+    color: green;
+}
+
+.p5_red span{
+    color: red;
+}
+
+.uo{
+    text-decoration: underline overline;
+}
+
+.p5_big{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.p5_blue{
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.p5_redu{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.p6{
+    font-size: 35px;
+    margin: ;
+}
+
+.p6 .black{
+    font-weight: bold;
+}
+.p6_yellow{
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.p6_purple{
+    color: purple;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Punto 7 */
+
+.p7_nav{
+    background-color: pink;
+}
+.p7_nav ul{
+    display: inline-flex;
+}
+
+.p7_nav li{
+    padding: 10px;
+    list-style: none;
+}
+.p7_nav li:hover{
+    background-color: blue;
+}
+.p7_nav a{
+    color: white;
+
+}
+
+
+/* Punto 8*/
+
+.p8_table{
+    background-color: yellow;
+    border: 2px dotted;
+    border-bottom: 1px red dashed;
+    border-spacing: 0px;
+}
+
+.p8_table td{
+    border: 1px dotted;
+}
+
+.p8_table th{
+    color: red;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size:12px ;
+}
+
+.p8_table th::first-letter{
+    font-size: 18px;
+}
