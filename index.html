@@ -6,20 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3155ac22a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" class="stylesheet">
-    <link rel="shortcut icon" href="img/vegetables.ico" type="image/x-icon">
-    <title>SABOR</title>
+    <link rel="shortcut icon" href="img/lettuce.ico" type="image/x-icon">
+    <title>Greeny</title>
 </head>
 <body>
+
+    <div class="sidebar">        
+        <a href="#" class="logo-sab">Greeny</a>
+        
+        <div class="icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
     <header>
-        <a href="#" class="logo">Sabor</a>
+        <!-- <a href="#" class="logo">Sabor</a> -->
         <div class="bx bx-menu" id="menu-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
         <ul class="navbar">
-            <li><a href="#home">Inicio</a></li>
+            <li><a href="#home" >Inicio</a></li>
             <li><a href="#about">Conócenos</a></li>
-            <li><a href="#menu">Productos</a></li>
-            <li><a href="#services">Servicios</a></li>
-            
+            <li><a href="#menu" >Productos</a></li>
+            <li><a href="#services" >Servicios</a></li>            
         </ul>
+
+        <form class="form-h">
+            <input type="text" placeholder="Lechuga freca...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i></button>
+        </form>
+        <div class="icons">
+            <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+            <a href="#"><i class="fa-regular fa-circle-user fa-lg"></i></a>
+        </div>
+        <button class="button_ingresar">Ingresar</button>
+        
     </header>
     <!--------------- Inicio--------------------->
     <section class="home" id="home">
@@ -36,31 +54,34 @@
             </div>
             <div class="images">
                 <div class="container-f">
-                    <div class="box-i color-banana" class>
+                    <div class="box-i color-banana fruit" class>
                         <div class="box-img-i">
                             <img src="img/banana.png" alt="">
                         </div>
                         <h2>Banano</h2>
                         <h3>Frutas</h3>
-                        <span>$500</span>
+                        <span>$500 c/u</span>
+                        <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                         <!-- Icono -->
                     </div>
-                    <div class="box-i color-apple">
+                    <div class="box-i color-apple fruit">
                         <div class="box-img-i">
                             <img src="img/apple.png" alt="">
                         </div>
                         <h2>Manzana</h2>
                         <h3>Frutas</h3>
-                        <span>$500</span>
+                        <span>$1450 c/u</span>
+                        <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                         <!-- Icono -->
                     </div>
-                    <div class="box-i color-orange">
+                    <div class="box-i color-orange fruit">
                         <div class="box-img-i">
                             <img src="img/orange.png" alt="">
                         </div>
                         <h2>Naranja</h2>
                         <h3>Frutas</h3>
-                        <span>$900</span>
+                        <span>$1000 c/u</span>
+                        <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                         <!-- Icono -->
                     </div>
                 </div>
@@ -69,18 +90,13 @@
         
     </section>
 
-    <!--------------- section ------------------
-    <section class="line_fruits">
-        <img src="img/line_fruits.png" alt="">
-    </section>--->
-
     <!--------------- About start --------------------->
     <section class="about" id="about">
         
         <div class="about-text">
             <span>Sobre nosotros</span>
             <h2>Somos una plataforma que une el campo con la ciudad </h2>
-            <p>Nuestra plataforma es una apuesta por conectar el campo con la ciudad, permitiendo el consumo de alimentos en naturales cultivados por los campesionos de la región y ue a su vez permite la preservación de medio ambiente.</p>
+            <p>Nuestra plataforma es una apuesta por conectar el campo con la ciudad, permitiendo el consumo de alimentos en naturales cultivados por los campesinos de la región y que a su vez permite la preservación de medio ambiente.</p>
             <a href="#" class="btn">Conócenos</a>
         </div>
         <div class="about-img">
@@ -96,29 +112,27 @@
         <div class="menu-container">
             <div class="box">
                 <div class="box-img">
-                    <img src="img/banana.png" alt="">
+                    <img src="img/fruits.png" alt="">
                 </div>
-                <h2>Banano</h2>
-                <h3>Frutas</h3>
-                <span>$500</span>
+                <h2>Frutas</h2>
+                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                 <!-- Icono -->
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="img/apple.png" alt="">
+                    <img src="img/vege.png" alt="">
                 </div>
-                <h2>Manzana</h2>
-                <h3>Frutas</h3>
-                <span>$500</span>
-                <!-- Icono -->
+                <h2>Verduras</h2>
+                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                <!-- <span>$500</span> -->
+            <!-- Icono -->
             </div>
             <div class="box">
                 <div class="box-img">
-                    <img src="img/orange.png" alt="">
+                    <img src="img/coffe.png" alt="">
                 </div>
-                <h2>Naranja</h2>
-                <h3>Frutas</h3>
-                <span>$900</span>
+                <h2>Café</h2>
+                <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                 <!-- Icono -->
             </div>
         </div>
