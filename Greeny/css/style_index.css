@@ -11,7 +11,7 @@
 }
 *{
     padding: 0;
-    margin: 0;    
+    margin: 0 0 0 0;    
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
@@ -45,7 +45,7 @@ body{
     left: 0;
     padding-top: 10px;
     width: 70px;
-    height: 30vh;
+    height: 27vh;
     background-color: #81A037;
     display: flex;
     flex-direction: column;
@@ -80,6 +80,22 @@ body{
     color: #fff;
     cursor: pointer;
 }
+
+.info-nombre {
+    display: none;
+    position: absolute;
+    top: 73px;
+    background-color: #5f565682;
+    padding: 9px;
+    border-radius: 12px;
+    font-size: small;
+}
+
+/* Muestra el div cuando se pasa el cursor por encima del icono */
+a:hover + .info-nombre {
+    display: block;
+}
+
 
 header{
     position: fixed;

@@ -1,44 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3155ac22a3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" class="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css" class="stylesheet">
     <link rel="shortcut icon" href="img/lettuce.ico" type="image/x-icon">
     <title>Greeny</title>
 </head>
+
 <body>
 
-    <div class="sidebar">        
-        <a href="#" class="logo-sab">Greeny</a>
-        
-        <div class="icon">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-    <header>
-        <!-- <a href="#" class="logo">Sabor</a> -->
-        <div class="bx bx-menu" id="menu-icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
-        <ul class="navbar">
-            <li><a href="#home" >Inicio</a></li>
-            <li><a href="#about">Conócenos</a></li>
-            <li><a href="#menu" >Productos</a></li>
-            <li><a href="#services" >Servicios</a></li>            
-        </ul>
-
-        <form class="form-h">
-            <input type="text" placeholder="Lechuga freca...">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i></button>
-        </form>
-        <div class="icons">
-            <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
-            <a href="#"><i class="fa-regular fa-circle-user fa-lg"></i></a>
-        </div>
-        <a href="proyecto/index.html" class="button_ingresar">Ingresar</a>
-        
-    </header>
+    <?php include 'logo_component.php'; ?>
+    <?php include 'header_component.php'; ?>
     <!--------------- Inicio--------------------->
     <section class="home" id="home">
         <div class="home-img">
@@ -47,7 +22,8 @@
         <div class="home-two"> <!-- ELIMINAR DIV-->
             <div class="home-text">
                 <h1>Del campo a tu mesa</h1>
-                <p>Productos frescos y deliciosos directamente de los agricultores colombianos. ¡Únete a nosotros para disfrutar de los mejores productos y contribuir a la conservación del medio ambiente!</p>
+                <p>Productos frescos y deliciosos directamente de los agricultores colombianos. ¡Únete a nosotros para
+                    disfrutar de los mejores productos y contribuir a la conservación del medio ambiente!</p>
                 <div class="button">
                     <a href="#" class="btn">Ordenar</a>
                 </div>
@@ -87,17 +63,19 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <!--------------- About start --------------------->
     <section class="about" id="about">
-        
+
         <div class="about-text">
             <span>Sobre nosotros</span>
             <h2>Somos una plataforma que une el campo con la ciudad </h2>
-            <p>Nuestra plataforma es una apuesta por conectar el campo con la ciudad, permitiendo el consumo de alimentos en naturales cultivados por los campesinos de la región y que a su vez permite la preservación de medio ambiente.</p>
-            <a href="#" class="btn">Conócenos</a>
+            <p>Nuestra plataforma es una apuesta por conectar el campo con la ciudad, permitiendo el consumo de
+                alimentos en naturales cultivados por los campesinos de la región y que a su vez permite la preservación
+                de medio ambiente.</p>
+            <a href="conocenos.php" class="btn">Conócenos</a>
         </div>
         <div class="about-img">
             <img src="img/about.png" alt="">
@@ -125,7 +103,7 @@
                 <h2>Verduras</h2>
                 <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                 <!-- <span>$500</span> -->
-            <!-- Icono -->
+                <!-- Icono -->
             </div>
             <div class="box">
                 <div class="box-img">
@@ -141,7 +119,7 @@
     <section class="services" id="services">
         <div class="heading">
             <span>Servicios</span>
-            <h2>Te ofrecemos alimentos de calidad, cultivados con el amor de nuestros campesinos</h2>            
+            <h2>Te ofrecemos alimentos de calidad, cultivados con el amor de nuestros campesinos</h2>
         </div>
         <div class="service-container">
             <div class="s-box">
@@ -161,7 +139,7 @@
                     <img src="img/delivery.png" alt="">
                 </div>
                 <h3>Servicio personalizado y amigable</h3>
-            </div>            
+            </div>
         </div>
     </section>
 
@@ -173,4 +151,5 @@
 
     <script src="script/script.js"></script>
 </body>
+
 </html>
